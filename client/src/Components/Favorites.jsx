@@ -6,7 +6,7 @@ export const Favorites = () => {
 
     const handleData = async () => {
         try {
-            const response = await axios.get(`http://localhost:8081/favorites`, {
+            const response = await axios.get(`https://slashbackend.onrender.com/favorites`, {
                 headers: { Accept: 'application/json' }
             });
             console.log(response);

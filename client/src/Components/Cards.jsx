@@ -3,7 +3,7 @@ import React from 'react';
 
 export const Cards = ({ id, fav = false}) => {
     const handleAdd = () => {
-        axios.post(`http://localhost:8081/favorites`,{id})
+        axios.post(`https://slashbackend.onrender.com/favorites`,{id})
             .then((res) => {
                 console.log("Added");
                 window.alert("Added to Favorites");
