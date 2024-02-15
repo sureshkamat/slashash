@@ -21,7 +21,7 @@ export const Favorites = () => {
   return (
     <div className="d-flex flex-wrap justify-content-center m-3 mx-auto" style={{ width: '95%', gap: '10px' }}>
                 {data.map((joke, index) => (
-                    <Cards id={joke.id} key={index} fav={true}/>
+                    <Cards id={joke.id} key={index} fav={true} />
                 ))}
             </div>
   )
