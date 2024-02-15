@@ -6,11 +6,11 @@ export const Favorites = () => {
 
     const handleData = async () => {
         try {
-            const response = await axios.get(`https://icanhazdadjoke.com/search?term=dad`, {
+            const response = await axios.get(`http://localhost:8081/favorites`, {
                 headers: { Accept: 'application/json' }
             });
             console.log(response);
-            setData(response.data.results);
+            setData(response.data);
         } catch (error) {
             console.error('Error fetching jokes:', error);
         }
